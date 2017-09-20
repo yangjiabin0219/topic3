@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(imgshow)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(imgshow subplot.cpp)
+target_link_libraries(imgshow ${OpenCV_LIBS})
